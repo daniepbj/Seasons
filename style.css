@@ -145,7 +145,7 @@ img {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
     .assets--container {
         transform: scale(0.35);
         position: absolute;
