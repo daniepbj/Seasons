@@ -1,0 +1,86 @@
+.scene {
+  display: grid;
+  grid-template-rows: 200px auto;
+
+  .assets--container {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+
+    img {
+      width: 100px;
+      position: absolute;
+    }
+
+    .trees {
+      img {
+        width: 200px;
+        bottom: 20px;
+        left: 50% - 100px;
+        z-index: -1;
+      }
+      #tree1-spring {
+        left: 50% - 400px;
+      }
+
+      #tree3-spring {
+        left: 50% + 200px;
+      }
+    }
+
+    .hills {
+      img {
+        width: 500px;
+        bottom: -300px;
+        left: 50% - 250px;
+        z-index: -2;
+        animation-name: hills;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        transition-timing-function: ease-out;
+        animation-delay: 7s;
+      }
+
+      #hill1-spring {
+        left: 50% - 450px;
+        animation-delay: 7.25s;
+      }
+
+      #hill3-spring {
+        z-index: -3;
+      }
+
+      #hill2-spring {
+        left: 50% - 50px;
+        animation-delay: 7.5s;
+      }
+    }
+
+    #ground-spring {
+      width: 1000px;
+      left: 50% - 500px;
+      z-index: 1;
+      bottom: 0;
+    }
+
+    #daffodil {
+      bottom: -100px;
+      width: 100px;
+      left: 50% + 100px;
+      animation-name: daffodil;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      transition-timing-function: ease-out;
+      animation-delay: 5s;
+      z-index: -1;
+    }
+  }
+
+  .clip {
+    width: 100%;
+    height: 101px;
+    position: absolute;
+    bottom: 0;
+    background-color: $background;
+  }
+}

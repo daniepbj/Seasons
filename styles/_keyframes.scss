@@ -1,0 +1,17 @@
+@keyframes hills {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-320px);
+  }
+}
+
+@keyframes daffodil {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-120px);
+  }
+}
