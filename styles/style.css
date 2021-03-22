@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
           box-sizing: border-box;
   font-size: inherit;
   color: #252525;
+  font-family: "Poppins", sans-serif;
 }
 
 * html {
@@ -13,14 +15,20 @@
 
 * body {
   overflow: hidden;
-  background-color: #e9f5db;
-}
-
-.scene {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 200px auto;
       grid-template-rows: 200px auto;
+  font-size: 1rem;
+  background-color: #e9f5db;
+  -webkit-animation-name: backgroundColor;
+          animation-name: backgroundColor;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .scene .assets--container {
@@ -41,12 +49,48 @@
   z-index: -1;
 }
 
-.scene .assets--container .trees #tree1-spring {
+.scene .assets--container .trees #tree1-spring, .scene .assets--container .trees #tree1-summer {
   left: calc(50% - 400px);
 }
 
-.scene .assets--container .trees #tree3-spring {
+.scene .assets--container .trees #tree3-spring, .scene .assets--container .trees #tree3-summer {
   left: calc(50% + 200px);
+}
+
+.scene .assets--container .trees #tree1-summer {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity;
+          animation-name: assetOpacity;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .trees #tree2-summer {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity;
+          animation-name: assetOpacity;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .trees #tree3-summer {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity;
+          animation-name: assetOpacity;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .scene .assets--container .hills img {
@@ -62,14 +106,14 @@
           animation-fill-mode: forwards;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
 }
 
 .scene .assets--container .hills #hill1-spring {
   left: calc(50% - 450px);
-  -webkit-animation-delay: 7.25s;
-          animation-delay: 7.25s;
+  -webkit-animation-delay: 9.25s;
+          animation-delay: 9.25s;
 }
 
 .scene .assets--container .hills #hill3-spring {
@@ -78,15 +122,79 @@
 
 .scene .assets--container .hills #hill2-spring {
   left: calc(50% - 50px);
-  -webkit-animation-delay: 7.5s;
-          animation-delay: 7.5s;
+  -webkit-animation-delay: 9.5s;
+          animation-delay: 9.5s;
 }
 
-.scene .assets--container #ground-spring {
+.scene .assets--container .hills #hill1-summer {
+  left: calc(50% - 450px);
+  opacity: 0;
+  -webkit-animation-name: hills, assetOpacity;
+          animation-name: hills, assetOpacity;
+  -webkit-animation-duration: 2s, 2s;
+          animation-duration: 2s, 2s;
+  -webkit-animation-delay: 9.25s, 13s;
+          animation-delay: 9.25s, 13s;
+  -webkit-transition-timing-function: ease-out, linear;
+          transition-timing-function: ease-out, linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill2-summer {
+  z-index: -3;
+  opacity: 0;
+  -webkit-animation-name: assetOpacity;
+          animation-name: assetOpacity;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: hills, assetOpacity;
+          animation-name: hills, assetOpacity;
+  -webkit-animation-duration: 2s, 2s;
+          animation-duration: 2s, 2s;
+  -webkit-animation-delay: 9s, 13s;
+          animation-delay: 9s, 13s;
+  -webkit-transition-timing-function: ease-out, linear;
+          transition-timing-function: ease-out, linear;
+  animation-fill-mode: forwards;
+}
+
+.scene .assets--container .hills #hill3-summer {
+  left: calc(50% - 50px);
+  opacity: 0;
+  -webkit-animation-name: hills, assetOpacity;
+          animation-name: hills, assetOpacity;
+  -webkit-animation-duration: 2s, 2s;
+          animation-duration: 2s, 2s;
+  -webkit-animation-delay: 9.5s, 13s;
+          animation-delay: 9.5s, 13s;
+  -webkit-transition-timing-function: ease-out, linear;
+          transition-timing-function: ease-out, linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.scene .assets--container #ground-spring, .scene .assets--container #ground-summer {
   width: 1000px;
   left: calc(50% - 500px);
   z-index: 1;
   bottom: 0;
+}
+
+.scene .assets--container #ground-summer {
+  opacity: 0;
+  -webkit-animation-name: assetOpacity;
+          animation-name: assetOpacity;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .scene .assets--container #daffodil {
@@ -112,6 +220,87 @@
   position: absolute;
   bottom: 0;
   background-color: #e9f5db;
+  -webkit-animation-name: backgroundColor;
+          animation-name: backgroundColor;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.text #textFadeIn {
+  -webkit-animation-name: textFadeIn;
+          animation-name: textFadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.text #textFadeUp {
+  -webkit-animation-name: textFadeUp;
+          animation-name: textFadeUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: -1;
+  position: relative;
+  top: 1000px;
+}
+
+@-webkit-keyframes backgroundColor {
+  100% {
+    background-color: #aaffd1;
+  }
+}
+
+@keyframes backgroundColor {
+  100% {
+    background-color: #aaffd1;
+  }
+}
+
+@-webkit-keyframes assetOpacity {
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes assetOpacity {
+  100% {
+    opacity: 100%;
+  }
 }
 
 @-webkit-keyframes hills {
@@ -155,6 +344,46 @@
   100% {
     -webkit-transform: translateY(-120px);
             transform: translateY(-120px);
+  }
+}
+
+@-webkit-keyframes textFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes textFadeUp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+}
+
+@keyframes textFadeUp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
   }
 }
 

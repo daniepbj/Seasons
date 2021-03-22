@@ -1,3 +1,15 @@
+@keyframes backgroundColor {
+  100% {
+    background-color: $backgroundSummer;
+  }
+}
+
+@keyframes assetOpacity {
+  100% {
+    opacity: 100%;
+  }
+}
+
 @keyframes hills {
   0% {
     transform: translateY(0);
@@ -13,5 +25,23 @@
   }
   100% {
     transform: translateY(-120px);
+  }
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes textFadeUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1000px);
   }
 }

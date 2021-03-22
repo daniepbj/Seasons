@@ -1,7 +1,4 @@
 .scene {
-  display: grid;
-  grid-template-rows: 200px auto;
-
   .assets--container {
     position: absolute;
     left: 50%;
@@ -26,6 +23,23 @@
       #tree3-spring {
         left: calc(50% + 200px);
       }
+
+      #tree1-summer {
+        @extend #tree1-spring;
+        opacity: 0;
+        @include assetOpacity;
+      }
+
+      #tree2-summer {
+        opacity: 0;
+        @include assetOpacity;
+      }
+
+      #tree3-summer {
+        @extend #tree3-spring;
+        opacity: 0;
+        @include assetOpacity;
+      }
     }
 
     .hills {
@@ -38,12 +52,12 @@
         animation-duration: 2s;
         animation-fill-mode: forwards;
         transition-timing-function: ease-out;
-        animation-delay: 7s;
+        animation-delay: 9s;
       }
 
       #hill1-spring {
         left: calc(50% - 450px);
-        animation-delay: 7.25s;
+        animation-delay: 9.25s;
       }
 
       #hill3-spring {
@@ -52,7 +66,38 @@
 
       #hill2-spring {
         left: calc(50% - 50px);
-        animation-delay: 7.5s;
+        animation-delay: 9.5s;
+      }
+
+      #hill1-summer {
+        left: calc(50% - 450px);
+        opacity: 0;
+        animation-name: hills, assetOpacity;
+        animation-duration: 2s, 2s;
+        animation-delay: 9.25s, 13s;
+        transition-timing-function: ease-out, linear;
+        animation-fill-mode: forwards;
+      }
+
+      #hill2-summer {
+        z-index: -3;
+        opacity: 0;
+        @include assetOpacity;
+        animation-name: hills, assetOpacity;
+        animation-duration: 2s, 2s;
+        animation-delay: 9s, 13s;
+        transition-timing-function: ease-out, linear;
+        animation-fill-mode: forwards;
+      }
+
+      #hill3-summer {
+        left: calc(50% - 50px);
+        opacity: 0;
+        animation-name: hills, assetOpacity;
+        animation-duration: 2s, 2s;
+        animation-delay: 9.5s, 13s;
+        transition-timing-function: ease-out, linear;
+        animation-fill-mode: forwards;
       }
     }
 
@@ -61,6 +106,12 @@
       left: calc(50% - 500px);
       z-index: 1;
       bottom: 0;
+    }
+
+    #ground-summer {
+      @extend #ground-spring;
+      opacity: 0;
+      @include assetOpacity;
     }
 
     #daffodil {
@@ -81,6 +132,10 @@
     height: 101px;
     position: absolute;
     bottom: 0;
-    background-color: $background;
+    background-color: $backgroundSpring;
+    animation-name: backgroundColor;
+    animation-delay: 13s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
   }
 }
