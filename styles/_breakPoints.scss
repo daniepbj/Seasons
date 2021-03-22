@@ -8,28 +8,36 @@
 
   @media only screen and (max-width: 900px) {
     .assets--container {
-      @extend .assets--container;
+      position: absolute;
+      left: 50%;
+      bottom: 100px;
       transform: scale(0.65);
     }
   }
 
   @media only screen and (max-width: 700px) {
     .assets--container {
-      @extend .assets--container;
+      position: absolute;
+      left: 50%;
+      bottom: 100px;
       transform: scale(0.55);
     }
   }
 
   @media only screen and (max-width: 600px) {
     .assets--container {
-      @extend .assets--container;
+      position: absolute;
+      left: 50%;
+      bottom: 100px;
       transform: scale(0.5);
     }
   }
 
   @media only screen and (max-width: 520px) {
     .assets--container {
-      @extend .assets--container;
+      position: absolute;
+      left: 50%;
+      bottom: 100px;
       transform: scale(0.35);
     }
   }

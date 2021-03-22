@@ -16,15 +16,15 @@
       img {
         width: 200px;
         bottom: 20px;
-        left: 50% - 100px;
+        left: calc(50% - 100px);
         z-index: -1;
       }
       #tree1-spring {
-        left: 50% - 400px;
+        left: calc(50% - 400px);
       }
 
       #tree3-spring {
-        left: 50% + 200px;
+        left: calc(50% + 200px);
       }
     }
 
@@ -32,7 +32,7 @@
       img {
         width: 500px;
         bottom: -300px;
-        left: 50% - 250px;
+        left: calc(50% - 250px);
         z-index: -2;
         animation-name: hills;
         animation-duration: 2s;
@@ -42,7 +42,7 @@
       }
 
       #hill1-spring {
-        left: 50% - 450px;
+        left: calc(50% - 450px);
         animation-delay: 7.25s;
       }
 
@@ -51,14 +51,14 @@
       }
 
       #hill2-spring {
-        left: 50% - 50px;
+        left: calc(50% - 50px);
         animation-delay: 7.5s;
       }
     }
 
     #ground-spring {
       width: 1000px;
-      left: 50% - 500px;
+      left: calc(50% - 500px);
       z-index: 1;
       bottom: 0;
     }
@@ -66,7 +66,7 @@
     #daffodil {
       bottom: -100px;
       width: 100px;
-      left: 50% + 100px;
+      left: calc(50% + 100px);
       animation-name: daffodil;
       animation-duration: 1s;
       animation-fill-mode: forwards;
