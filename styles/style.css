@@ -276,7 +276,8 @@
           animation-fill-mode: forwards;
   z-index: -1;
   position: relative;
-  top: 1000px;
+  top: 500px;
+  opacity: 0;
 }
 
 @-webkit-keyframes backgroundColor {
@@ -370,9 +371,13 @@
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+  25% {
+    opacity: 0;
+  }
   100% {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 100%;
   }
 }
 
@@ -381,9 +386,13 @@
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+  25% {
+    opacity: 0;
+  }
   100% {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 100%;
   }
 }
 
