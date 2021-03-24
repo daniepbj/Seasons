@@ -5,28 +5,73 @@
   font-size: 1.5rem;
   user-select: none;
 
-  p {
-    display: none;
-  }
-
   #textFadeIn {
-    animation-name: textFadeIn;
-    animation-duration: 2s;
-    animation-delay: 2s;
+    animation-name: textFadeIn, assetOpacityDown;
+    animation-duration: 2s, 2s;
+    animation-delay: 2s, 11s;
     animation-fill-mode: forwards;
     opacity: 0;
     display: inline-block;
   }
 
   #textFadeUp {
-    animation-name: textFadeUp;
-    animation-duration: 2s;
-    animation-delay: 7s;
+    animation-name: textFadeUp, assetOpacityDown;
+    animation-duration: 2s, 2s;
+    animation-delay: 7s, 11s;
     animation-fill-mode: forwards;
     z-index: -1;
     position: relative;
     top: 500px;
     opacity: 0;
     display: inline-block;
+  }
+
+  #textDance {
+    animation-name: textDance, textFadeIn, assetOpacityDown;
+    animation-duration: 1s, 2s, 2s;
+    animation-delay: 2s, 14s, 24s;
+    animation-iteration-count: infinite, 1, 1;
+    animation-direction: alternate, linear, linear;
+    animation-timing-function: ease-in-out, linear, linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  #textHeatUp {
+    animation-name: color-fade, shake, smelt, textFadeIn, assetOpacityDown;
+    animation-delay: 29s, 29s, 34s, 27s, 37s;
+    animation-duration: 2s, 2s, 4s, 2s, 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    color: #ffe650;
+  }
+
+  .textColors {
+    animation-name: textFadeIn;
+    animation-delay: 27s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+  }
+
+  .textColors p {
+    display: inline-block;
+  }
+
+  #textColors1,
+  #textColors2,
+  #textColors3,
+  #textColors4,
+  #textColors5,
+  #textColors6,
+  #textColors7 {
+    animation-name: fall-down2;
+    animation-duration: 2.5s;
+    animation-delay: 36.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    z-index: -1;
   }
 }
