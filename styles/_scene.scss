@@ -298,7 +298,7 @@
     animation-name: bird, birdOut;
     animation-duration: 3s, 3s;
     animation-delay: 15s, 23s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards, none;
     animation-timing-function: linear;
   }
 

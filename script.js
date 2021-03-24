@@ -10,6 +10,7 @@ let textColors5 = document.getElementById("textColors5");
 let textColors6 = document.getElementById("textColors6");
 let textColors7 = document.getElementById("textColors7");
 let textColors = document.getElementsByClassName("textColors")[0];
+let bird = document.getElementById("bird");
 
 setTimeout(function () {
   textFadeIn.remove();
@@ -65,3 +66,7 @@ setTimeout(function () {
 setTimeout(function () {
   textColors.remove();
 }, 39000);
+
+setTimeout(function () {
+  bird.remove();
+}, 25900);
