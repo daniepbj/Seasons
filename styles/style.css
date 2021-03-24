@@ -10,7 +10,6 @@
 
 * html {
   height: 100%;
-  overflow: hidden;
 }
 
 * body {
@@ -201,7 +200,7 @@
 
 .scene .assets--container .hills img {
   width: 500px;
-  bottom: -300px;
+  bottom: -270px;
   left: calc(50% - 250px);
   z-index: -2;
   -webkit-animation-name: hills;
@@ -727,8 +726,8 @@
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-320px);
-            transform: translateY(-320px);
+    -webkit-transform: translateY(-270px);
+            transform: translateY(-270px);
   }
 }
 
@@ -738,8 +737,8 @@
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-320px);
-            transform: translateY(-320px);
+    -webkit-transform: translateY(-270px);
+            transform: translateY(-270px);
   }
 }
 
