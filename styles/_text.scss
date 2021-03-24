@@ -3,8 +3,8 @@
   height: 100%;
   @include flexCenter(column);
   font-size: 1.5rem;
-  white-space: nowrap;
   user-select: none;
+  text-align: center;
 
   #textFadeIn {
     animation-name: textFadeIn, assetOpacityDown;

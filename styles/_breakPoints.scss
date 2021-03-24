@@ -28,9 +28,6 @@
       bottom: 100px;
       transform: scale(0.55);
     }
-    .text {
-      font-size: 0.9rem;
-    }
   }
 
   @media only screen and (max-width: 600px) {
@@ -41,7 +38,7 @@
       transform: scale(0.5);
     }
     .text {
-      font-size: 0.7rem;
+      font-size: 0.6rem;
     }
   }
 
@@ -51,9 +48,6 @@
       left: 50%;
       bottom: 100px;
       transform: scale(0.35);
-    }
-    .text {
-      font-size: 0.7rem;
     }
   }
 }
