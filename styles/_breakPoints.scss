@@ -5,6 +5,9 @@
     left: 50%;
     bottom: 100px;
   }
+  .text {
+    font-size: 1.4rem;
+  }
 
   @media only screen and (max-width: 900px) {
     .assets--container {
@@ -12,6 +15,9 @@
       left: 50%;
       bottom: 100px;
       transform: scale(0.65);
+    }
+    .text {
+      font-size: 0.9rem;
     }
   }
 
@@ -22,6 +28,9 @@
       bottom: 100px;
       transform: scale(0.55);
     }
+    .text {
+      font-size: 0.9rem;
+    }
   }
 
   @media only screen and (max-width: 600px) {
@@ -31,6 +40,9 @@
       bottom: 100px;
       transform: scale(0.5);
     }
+    .text {
+      font-size: 0.8rem;
+    }
   }
 
   @media only screen and (max-width: 520px) {
@@ -39,6 +51,9 @@
       left: 50%;
       bottom: 100px;
       transform: scale(0.35);
+    }
+    .text {
+      font-size: 0.8rem;
     }
   }
 }

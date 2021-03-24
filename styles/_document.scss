@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: inherit;
   color: $text;
   font-family: "Poppins", sans-serif;
 
@@ -16,7 +15,6 @@
     overflow: hidden;
     display: grid;
     grid-template-rows: 200px auto;
-    font-size: 1rem;
     background-color: $backgroundSpring;
     animation-name: backgroundColorSummer, backgroundColorAutumn,
       backgroundColorWinter;

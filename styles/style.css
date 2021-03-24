@@ -4,7 +4,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: inherit;
   color: #252525;
   font-family: "Poppins", sans-serif;
 }
@@ -19,7 +18,6 @@
   display: grid;
   -ms-grid-rows: 200px auto;
       grid-template-rows: 200px auto;
-  font-size: 1rem;
   background-color: #e9f5db;
   -webkit-animation-name: backgroundColorSummer, backgroundColorAutumn, backgroundColorWinter;
           animation-name: backgroundColorSummer, backgroundColorAutumn, backgroundColorWinter;
@@ -514,6 +512,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 1.5rem;
+  white-space: nowrap;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1437,6 +1436,9 @@
     left: 50%;
     bottom: 100px;
   }
+  .text {
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 1100px) and (max-width: 900px) {
@@ -1446,6 +1448,9 @@
     bottom: 100px;
     -webkit-transform: scale(0.65);
             transform: scale(0.65);
+  }
+  .text {
+    font-size: 0.9rem;
   }
 }
 
@@ -1457,6 +1462,9 @@
     -webkit-transform: scale(0.55);
             transform: scale(0.55);
   }
+  .text {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width: 1100px) and (max-width: 600px) {
@@ -1467,6 +1475,9 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
+  .text {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 1100px) and (max-width: 520px) {
@@ -1476,6 +1487,9 @@
     bottom: 100px;
     -webkit-transform: scale(0.35);
             transform: scale(0.35);
+  }
+  .text {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
