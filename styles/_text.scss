@@ -5,12 +5,17 @@
   font-size: 1.5rem;
   user-select: none;
 
+  p {
+    display: none;
+  }
+
   #textFadeIn {
     animation-name: textFadeIn;
     animation-duration: 2s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
     opacity: 0;
+    display: inline-block;
   }
 
   #textFadeUp {
@@ -22,5 +27,6 @@
     position: relative;
     top: 500px;
     opacity: 0;
+    display: inline-block;
   }
 }

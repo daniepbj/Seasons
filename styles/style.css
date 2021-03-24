@@ -253,6 +253,10 @@
           user-select: none;
 }
 
+.text p {
+  display: none;
+}
+
 .text #textFadeIn {
   -webkit-animation-name: textFadeIn;
           animation-name: textFadeIn;
@@ -263,6 +267,7 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
+  display: inline-block;
 }
 
 .text #textFadeUp {
@@ -278,6 +283,7 @@
   position: relative;
   top: 500px;
   opacity: 0;
+  display: inline-block;
 }
 
 @-webkit-keyframes backgroundColor {
