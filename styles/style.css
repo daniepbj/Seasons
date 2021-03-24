@@ -473,8 +473,8 @@
           animation-duration: 3s, 3s;
   -webkit-animation-delay: 15s, 23s;
           animation-delay: 15s, 23s;
-  -webkit-animation-fill-mode: forwards, none;
-          animation-fill-mode: forwards, none;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }

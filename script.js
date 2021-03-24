@@ -69,4 +69,4 @@ setTimeout(function () {
 
 setTimeout(function () {
   bird.remove();
-}, 25900);
+}, 25500);
