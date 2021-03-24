@@ -18,27 +18,97 @@
       }
       #tree1-spring {
         left: calc(50% - 400px);
+        animation-name: assetOpacityDown;
+        animation-duration: 1s;
+        animation-delay: 15s;
+        animation-fill-mode: forwards;
+      }
+
+      #tree2-spring {
+        animation-name: assetOpacityDown;
+        animation-duration: 1s;
+        animation-delay: 15s;
+        animation-fill-mode: forwards;
       }
 
       #tree3-spring {
         left: calc(50% + 200px);
+        animation-name: assetOpacityDown;
+        animation-duration: 1s;
+        animation-delay: 15s;
+        animation-fill-mode: forwards;
       }
 
       #tree1-summer {
         @extend #tree1-spring;
         opacity: 0;
-        @include assetOpacity;
+        animation-name: assetOpacity, assetOpacityDown;
+        animation-duration: 2s, 1s;
+        animation-delay: 13s, 28s;
+        animation-fill-mode: forwards, forwards;
       }
 
       #tree2-summer {
         opacity: 0;
-        @include assetOpacity;
+        animation-name: assetOpacity, assetOpacityDown;
+        animation-duration: 2s, 1s;
+        animation-delay: 13s, 28s;
+        animation-fill-mode: forwards, forwards;
       }
 
       #tree3-summer {
         @extend #tree3-spring;
         opacity: 0;
+        animation-name: assetOpacity, assetOpacityDown;
+        animation-duration: 2s, 1s;
+        animation-delay: 13s, 28s;
+        animation-fill-mode: forwards, forwards;
+      }
+
+      #tree1-autumn {
+        @extend #tree1-spring;
+        opacity: 0;
+        animation-name: assetOpacity, assetOpacityDown;
+        animation-duration: 2s, 1s;
+        animation-delay: 26s, 41s;
+        animation-fill-mode: forwards, forwards;
+      }
+
+      #tree2-autumn {
+        opacity: 0;
+        animation-name: assetOpacity, assetOpacityDown;
+        animation-duration: 2s, 1s;
+        animation-delay: 26s, 41s;
+        animation-fill-mode: forwards, forwards;
+      }
+
+      #tree3-autumn {
+        @extend #tree3-spring;
+        opacity: 0;
+        animation-name: assetOpacity, assetOpacityDown;
+        animation-duration: 2s, 1s;
+        animation-delay: 26s, 41s;
+        animation-fill-mode: forwards, forwards;
+      }
+
+      #tree1-winter {
+        @extend #tree1-spring;
+        opacity: 0;
         @include assetOpacity;
+        animation-delay: 39s;
+      }
+
+      #tree2-winter {
+        opacity: 0;
+        @include assetOpacity;
+        animation-delay: 39s;
+      }
+
+      #tree3-winter {
+        @extend #tree3-spring;
+        opacity: 0;
+        @include assetOpacity;
+        animation-delay: 39s;
       }
     }
 
@@ -57,24 +127,34 @@
 
       #hill1-spring {
         left: calc(50% - 450px);
-        animation-delay: 9.25s;
+        animation-name: hills, assetOpacityDown;
+        animation-duration: 2s, 1s;
+        animation-delay: 9.25s, 15s;
+        animation-fill-mode: forwards;
       }
 
       #hill3-spring {
         z-index: -3;
+        animation-name: hills, assetOpacityDown;
+        animation-duration: 2s, 1s;
+        animation-delay: 9s, 15s;
+        animation-fill-mode: forwards;
       }
 
       #hill2-spring {
         left: calc(50% - 50px);
-        animation-delay: 9.5s;
+        animation-name: hills, assetOpacityDown;
+        animation-duration: 2s, 1s;
+        animation-delay: 9.5s, 15s;
+        animation-fill-mode: forwards;
       }
 
       #hill1-summer {
         left: calc(50% - 450px);
         opacity: 0;
-        animation-name: hills, assetOpacity;
-        animation-duration: 2s, 2s;
-        animation-delay: 9.25s, 13s;
+        animation-name: hills, assetOpacity, assetOpacityDown;
+        animation-duration: 2s, 2s, 1s;
+        animation-delay: 9.25s, 13s, 28s;
         transition-timing-function: ease-out, linear;
         animation-fill-mode: forwards;
       }
@@ -82,10 +162,9 @@
       #hill2-summer {
         z-index: -3;
         opacity: 0;
-        @include assetOpacity;
-        animation-name: hills, assetOpacity;
-        animation-duration: 2s, 2s;
-        animation-delay: 9s, 13s;
+        animation-name: hills, assetOpacity, assetOpacityDown;
+        animation-duration: 2s, 2s, 1s;
+        animation-delay: 9s, 13s, 28s;
         transition-timing-function: ease-out, linear;
         animation-fill-mode: forwards;
       }
@@ -93,9 +172,70 @@
       #hill3-summer {
         left: calc(50% - 50px);
         opacity: 0;
+        animation-name: hills, assetOpacity, assetOpacityDown;
+        animation-duration: 2s, 2s, 1s;
+        animation-delay: 9.5s, 13s, 28s;
+        transition-timing-function: ease-out, linear;
+        animation-fill-mode: forwards;
+      }
+
+      #hill1-autumn {
+        left: calc(50% - 450px);
+        opacity: 0;
+        animation-name: hills, assetOpacity, assetOpacityDown;
+        animation-duration: 2s, 2s, 1s;
+        animation-delay: 9.25s, 26s, 41s;
+        transition-timing-function: ease-out, linear;
+        animation-fill-mode: forwards;
+      }
+
+      #hill2-autumn {
+        z-index: -3;
+        opacity: 0;
+        animation-name: hills, assetOpacity, assetOpacityDown;
+        animation-duration: 2s, 2s, 1s;
+        animation-delay: 9s, 26s, 41s;
+        transition-timing-function: ease-out, linear;
+        animation-fill-mode: forwards;
+      }
+
+      #hill3-autumn {
+        left: calc(50% - 50px);
+        opacity: 0;
+        animation-name: hills, assetOpacity, assetOpacityDown;
+        animation-duration: 2s, 2s, 1s;
+        animation-delay: 9.5s, 26s, 41s;
+        transition-timing-function: ease-out, linear;
+        animation-fill-mode: forwards;
+      }
+
+      #hill1-winter {
+        left: calc(50% - 450px);
+        opacity: 0;
         animation-name: hills, assetOpacity;
         animation-duration: 2s, 2s;
-        animation-delay: 9.5s, 13s;
+        animation-delay: 9.25s, 39s;
+        transition-timing-function: ease-out, linear;
+        animation-fill-mode: forwards;
+      }
+
+      #hill2-winter {
+        z-index: -3;
+        opacity: 0;
+        @include assetOpacity;
+        animation-name: hills, assetOpacity;
+        animation-duration: 2s, 2s;
+        animation-delay: 9s, 39s;
+        transition-timing-function: ease-out, linear;
+        animation-fill-mode: forwards;
+      }
+
+      #hill3-winter {
+        left: calc(50% - 50px);
+        opacity: 0;
+        animation-name: hills, assetOpacity;
+        animation-duration: 2s, 2s;
+        animation-delay: 9.5s, 39s;
         transition-timing-function: ease-out, linear;
         animation-fill-mode: forwards;
       }
@@ -106,23 +246,46 @@
       left: calc(50% - 500px);
       z-index: 1;
       bottom: 0;
+      animation-name: assetOpacityDown;
+      animation-duration: 1s;
+      animation-delay: 15s;
+      animation-fill-mode: forwards;
     }
 
     #ground-summer {
       @extend #ground-spring;
       opacity: 0;
+      animation-name: assetOpacity, assetOpacityDown;
+      animation-duration: 2s, 1s;
+      animation-delay: 13s, 28s;
+      animation-fill-mode: forwards, forwards;
+    }
+
+    #ground-autumn {
+      @extend #ground-spring;
+      opacity: 0;
+      animation-name: assetOpacity, assetOpacityDown;
+      animation-duration: 2s, 1s;
+      animation-delay: 26s, 41s;
+      animation-fill-mode: forwards, forwards;
+    }
+
+    #ground-winter {
+      @extend #ground-spring;
+      opacity: 0;
       @include assetOpacity;
+      animation-delay: 39s;
     }
 
     #daffodil {
       bottom: -100px;
       width: 100px;
       left: calc(50% + 100px);
-      animation-name: daffodil;
-      animation-duration: 1s;
+      animation-name: daffodil, daffodilDown;
+      animation-duration: 1s, 2s;
       animation-fill-mode: forwards;
-      transition-timing-function: ease-out;
-      animation-delay: 5s;
+      transition-timing-function: ease-in-out;
+      animation-delay: 5s, 24s;
       z-index: -1;
     }
   }
@@ -133,9 +296,10 @@
     position: absolute;
     bottom: 0;
     background-color: $backgroundSpring;
-    animation-name: backgroundColor;
-    animation-delay: 13s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    animation-name: backgroundColorSummer, backgroundColorAutumn,
+      backgroundColorWinter;
+    animation-delay: 13s, 26s, 39s;
+    animation-duration: 2s, 2s, 2s;
+    animation-fill-mode: forwards, forwards, forwards;
   }
 }

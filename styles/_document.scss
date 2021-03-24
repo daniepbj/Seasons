@@ -18,9 +18,10 @@
     grid-template-rows: 200px auto;
     font-size: 1rem;
     background-color: $backgroundSpring;
-    animation-name: backgroundColor;
-    animation-delay: 13s;
-    animation-duration: 2s;
+    animation-name: backgroundColorSummer, backgroundColorAutumn,
+      backgroundColorWinter;
+    animation-delay: 13s, 26s, 39s;
+    animation-duration: 2s, 2s, 2s;
     animation-fill-mode: forwards;
   }
 }

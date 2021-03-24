@@ -1,12 +1,30 @@
-@keyframes backgroundColor {
+@keyframes backgroundColorSummer {
   100% {
     background-color: $backgroundSummer;
+  }
+}
+
+@keyframes backgroundColorAutumn {
+  100% {
+    background-color: $backgroundAutumn;
+  }
+}
+
+@keyframes backgroundColorWinter {
+  100% {
+    background-color: $backgroundWinter;
   }
 }
 
 @keyframes assetOpacity {
   100% {
     opacity: 100%;
+  }
+}
+
+@keyframes assetOpacityDown {
+  100% {
+    opacity: 0;
   }
 }
 
@@ -25,6 +43,12 @@
   }
   100% {
     transform: translateY(-120px);
+  }
+}
+
+@keyframes daffodilDown {
+  100% {
+    transform: translateY(120px);
   }
 }
 
