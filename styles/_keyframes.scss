@@ -52,6 +52,123 @@
   }
 }
 
+@keyframes bird {
+  0.0000% {
+    transform: translate(0px, 0px);
+  }
+  4.8589% {
+    transform: translate(15px, 37px);
+  }
+  9.3394% {
+    transform: translate(32px, 70px);
+  }
+  13.4866% {
+    transform: translate(50px, 100px);
+  }
+  17.3476% {
+    transform: translate(69px, 126px);
+  }
+  20.9701% {
+    transform: translate(89px, 148px);
+  }
+  24.4016% {
+    transform: translate(110px, 167px);
+  }
+  27.6877% {
+    transform: translate(132px, 183px);
+  }
+  30.8709% {
+    transform: translate(155px, 197px);
+  }
+  33.9885% {
+    transform: translate(179px, 207px);
+  }
+  37.0719% {
+    transform: translate(203px, 215px);
+  }
+  40.1454% {
+    transform: translate(228px, 221px);
+  }
+  46.3228% {
+    transform: translate(279px, 228px);
+  }
+  52.5934% {
+    transform: translate(331px, 227px);
+  }
+  58.9436% {
+    transform: translate(384px, 222px);
+  }
+  65.3054% {
+    transform: translate(437px, 214.7px);
+  }
+  78.3796% {
+    transform: translate(544px, 194px);
+  }
+  84.0699% {
+    transform: translate(590px, 187px);
+  }
+  89.3234% {
+    transform: translate(634px, 184px);
+  }
+  94.0934% {
+    transform: translate(674px, 186px);
+  }
+  96.3118% {
+    transform: translate(692px, 189px);
+  }
+  100.0000% {
+    transform: translate(721px, 201px);
+  }
+}
+
+@keyframes birdOut {
+  0.0000% {
+    transform: translate(721px, 201px);
+  }
+  4.6604% {
+    transform: translate(769.5px, 183.4px);
+  }
+  7.3877% {
+    transform: translate(799.8px, 164.1px);
+  }
+  13.0113% {
+    transform: translate(865.4px, 129.8px);
+  }
+  18.8847% {
+    transform: translate(937.1px, 100.7px);
+  }
+  25.0078% {
+    transform: translate(1013.8px, 76.1px);
+  }
+  31.3589% {
+    transform: translate(1094.8px, 55.2px);
+  }
+  37.9015% {
+    transform: translate(1179.1px, 37.3px);
+  }
+  44.5888% {
+    transform: translate(1265.8px, 21.8px);
+  }
+  72.4915% {
+    transform: translate(1628.9px, -33.9px);
+  }
+  79.0241% {
+    transform: translate(1713.6px, -49.1px);
+  }
+  85.3516% {
+    transform: translate(1795.1px, -66.4px);
+  }
+  91.4279% {
+    transform: translate(1872.5px, -86.7px);
+  }
+  97.2181% {
+    transform: translate(1944.9px, -110.5px);
+  }
+  100.0000% {
+    transform: translate(1979px, -124px);
+  }
+}
+
 @keyframes textFadeIn {
   0% {
     opacity: 0;
@@ -92,15 +209,15 @@
 
 @keyframes color-fade {
   0% {
-    color: #ffe650;
+    color: #f7b267;
   }
 
-  75% {
-    color: #f25c54;
+  50% {
+    color: #e64a42;
   }
 
   100% {
-    color: #dc143c;
+    color: #ad0023;
   }
 }
 
@@ -144,19 +261,28 @@
   }
 }
 
-@keyframes yellow {
+@keyframes yellowFade {
+  0% {
+    color: $text;
+  }
   100% {
     color: #f7b267;
   }
 }
 
-@keyframes red {
+@keyframes redFade {
+  0% {
+    color: $text;
+  }
   100% {
     color: red;
   }
 }
 
-@keyframes brown {
+@keyframes brownFade {
+  0% {
+    color: $text;
+  }
   100% {
     color: brown;
   }
@@ -171,7 +297,7 @@
   }
 
   20% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 
   100% {

@@ -39,8 +39,8 @@
 
   #textHeatUp {
     animation-name: color-fade, shake, smelt, textFadeIn, assetOpacityDown;
-    animation-delay: 29s, 29s, 34s, 27s, 37s;
-    animation-duration: 2s, 2s, 4s, 2s, 1s;
+    animation-delay: 29s, 29s, 34s, 27s, 35s;
+    animation-duration: 13s, 2s, 4s, 2s, 1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     opacity: 0;
@@ -62,16 +62,40 @@
 
   #textColors1,
   #textColors2,
-  #textColors3,
-  #textColors4,
   #textColors5,
-  #textColors6,
   #textColors7 {
     animation-name: fall-down2;
     animation-duration: 2.5s;
-    animation-delay: 36.5s;
+    animation-delay: 37.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
+    z-index: -1;
+  }
+
+  #textColors3 {
+    animation-name: fall-down, yellowFade;
+    animation-duration: 2s, 2s;
+    animation-delay: 37.5s, 30s;
+    animation-fill-mode: forwards, forwards;
+    animation-timing-function: ease-in-out, linear;
+    z-index: -1;
+  }
+
+  #textColors4 {
+    animation-name: fall-down, redFade;
+    animation-duration: 2s, 2s;
+    animation-delay: 37.5s, 30s;
+    animation-fill-mode: forwards, forwards;
+    animation-timing-function: ease-in-out, linear;
+    z-index: -1;
+  }
+
+  #textColors6 {
+    animation-name: fall-down, brownFade;
+    animation-duration: 2s, 2s;
+    animation-delay: 37.5s, 30s;
+    animation-fill-mode: forwards, forwards;
+    animation-timing-function: ease-in-out, linear;
     z-index: -1;
   }
 }

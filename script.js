@@ -9,6 +9,7 @@ let textColors4 = document.getElementById("textColors4");
 let textColors5 = document.getElementById("textColors5");
 let textColors6 = document.getElementById("textColors6");
 let textColors7 = document.getElementById("textColors7");
+let textColors = document.getElementsByClassName("textColors")[0];
 
 setTimeout(function () {
   textFadeIn.remove();
@@ -17,7 +18,7 @@ setTimeout(function () {
 
 setTimeout(function () {
   textDance.innerHTML =
-    "🎵And I must dance, and I must sing.To see the beauty of the spring.🎵";
+    "♪ And I must dance, and I must sing.To see the beauty of the spring ♪";
 }, 13000);
 
 setTimeout(function () {
@@ -56,3 +57,11 @@ setTimeout(function () {
 setTimeout(function () {
   textColors7.innerHTML = "A shower sprinkle softly down.";
 }, 26000);
+
+setTimeout(function () {
+  textHeatUp.remove();
+}, 39000);
+
+setTimeout(function () {
+  textColors.remove();
+}, 39000);
