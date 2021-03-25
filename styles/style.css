@@ -469,8 +469,8 @@
   right: 1000px;
   -webkit-animation-name: bird, birdOut;
           animation-name: bird, birdOut;
-  -webkit-animation-duration: 3s, 3s;
-          animation-duration: 3s, 3s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 15s, 23s;
           animation-delay: 15s, 23s;
   -webkit-animation-fill-mode: forwards;
@@ -535,8 +535,8 @@
 }
 
 .text #textFadeUp {
-  -webkit-animation-name: textFadeUp, assetOpacityDown;
-          animation-name: textFadeUp, assetOpacityDown;
+  -webkit-animation-name: textFad eUp, assetOpacityDown;
+          animation-name: textFad eUp, assetOpacityDown;
   -webkit-animation-duration: 2s, 2s;
           animation-duration: 2s, 2s;
   -webkit-animation-delay: 7s, 11s;
@@ -583,6 +583,71 @@
   color: #ffe650;
 }
 
+.text #textCool1 {
+  -webkit-animation-name: textFadeIn, assetOpacityDown;
+          animation-name: textFadeIn, assetOpacityDown;
+  -webkit-animation-delay: 40s, 51s;
+          animation-delay: 40s, 51s;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  opacity: 0;
+  color: #0911a0;
+}
+
+.text #textCool2 {
+  -webkit-animation-name: textFadeIn, cool, assetOpacityDown;
+          animation-name: textFadeIn, cool, assetOpacityDown;
+  -webkit-animation-delay: 40s, 42s, 51s;
+          animation-delay: 40s, 42s, 51s;
+  -webkit-animation-duration: 2s, 1.5s, 1s;
+          animation-duration: 2s, 1.5s, 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out, linear;
+          animation-timing-function: ease-in-out, linear;
+  -webkit-animation-iteration-count: 1, infinite;
+          animation-iteration-count: 1, infinite;
+  opacity: 0;
+  color: #0911a0;
+}
+
+.text #textCool3 {
+  -webkit-animation-name: textFadeIn, assetOpacityDown;
+          animation-name: textFadeIn, assetOpacityDown;
+  -webkit-animation-delay: 40s, 51s;
+          animation-delay: 40s, 51s;
+  -webkit-animation-duration: 2s, 1s;
+          animation-duration: 2s, 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  opacity: 0;
+  color: #0911a0;
+}
+
+.text .textCool p {
+  display: inline-block;
+}
+
+.text #textBlowAway {
+  -webkit-animation-name: textFadeIn, blowAway, assetOpacityDown;
+          animation-name: textFadeIn, blowAway, assetOpacityDown;
+  -webkit-animation-delay: 40s, 48s, 51s;
+          animation-delay: 40s, 48s, 51s;
+  -webkit-animation-duration: 2s, 2s, 1s;
+          animation-duration: 2s, 2s, 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+
 .text .textColors {
   -webkit-animation-name: textFadeIn;
           animation-name: textFadeIn;
@@ -623,8 +688,8 @@
           animation-name: fall-down, yellowFade;
   -webkit-animation-duration: 2s, 2s;
           animation-duration: 2s, 2s;
-  -webkit-animation-delay: 37.5s, 30s;
-          animation-delay: 37.5s, 30s;
+  -webkit-animation-delay: 36.5s, 30s;
+          animation-delay: 36.5s, 30s;
   -webkit-animation-fill-mode: forwards, forwards;
           animation-fill-mode: forwards, forwards;
   -webkit-animation-timing-function: ease-in-out, linear;
@@ -637,8 +702,8 @@
           animation-name: fall-down, redFade;
   -webkit-animation-duration: 2s, 2s;
           animation-duration: 2s, 2s;
-  -webkit-animation-delay: 37.5s, 30s;
-          animation-delay: 37.5s, 30s;
+  -webkit-animation-delay: 36.5s, 30s;
+          animation-delay: 36.5s, 30s;
   -webkit-animation-fill-mode: forwards, forwards;
           animation-fill-mode: forwards, forwards;
   -webkit-animation-timing-function: ease-in-out, linear;
@@ -651,8 +716,8 @@
           animation-name: fall-down, brownFade;
   -webkit-animation-duration: 2s, 2s;
           animation-duration: 2s, 2s;
-  -webkit-animation-delay: 37.5s, 30s;
-          animation-delay: 37.5s, 30s;
+  -webkit-animation-delay: 36.5s, 30s;
+          animation-delay: 36.5s, 30s;
   -webkit-animation-fill-mode: forwards, forwards;
           animation-fill-mode: forwards, forwards;
   -webkit-animation-timing-function: ease-in-out, linear;
@@ -961,128 +1026,24 @@
 }
 
 @-webkit-keyframes birdOut {
-  0.0000% {
+  0% {
     -webkit-transform: translate(721px, 201px);
             transform: translate(721px, 201px);
   }
-  4.6604% {
-    -webkit-transform: translate(769.5px, 183.4px);
-            transform: translate(769.5px, 183.4px);
-  }
-  7.3877% {
-    -webkit-transform: translate(799.8px, 164.1px);
-            transform: translate(799.8px, 164.1px);
-  }
-  13.0113% {
-    -webkit-transform: translate(865.4px, 129.8px);
-            transform: translate(865.4px, 129.8px);
-  }
-  18.8847% {
-    -webkit-transform: translate(937.1px, 100.7px);
-            transform: translate(937.1px, 100.7px);
-  }
-  25.0078% {
-    -webkit-transform: translate(1013.8px, 76.1px);
-            transform: translate(1013.8px, 76.1px);
-  }
-  31.3589% {
-    -webkit-transform: translate(1094.8px, 55.2px);
-            transform: translate(1094.8px, 55.2px);
-  }
-  37.9015% {
-    -webkit-transform: translate(1179.1px, 37.3px);
-            transform: translate(1179.1px, 37.3px);
-  }
-  44.5888% {
-    -webkit-transform: translate(1265.8px, 21.8px);
-            transform: translate(1265.8px, 21.8px);
-  }
-  72.4915% {
-    -webkit-transform: translate(1628.9px, -33.9px);
-            transform: translate(1628.9px, -33.9px);
-  }
-  79.0241% {
-    -webkit-transform: translate(1713.6px, -49.1px);
-            transform: translate(1713.6px, -49.1px);
-  }
-  85.3516% {
-    -webkit-transform: translate(1795.1px, -66.4px);
-            transform: translate(1795.1px, -66.4px);
-  }
-  91.4279% {
-    -webkit-transform: translate(1872.5px, -86.7px);
-            transform: translate(1872.5px, -86.7px);
-  }
-  97.2181% {
-    -webkit-transform: translate(1944.9px, -110.5px);
-            transform: translate(1944.9px, -110.5px);
-  }
-  100.0000% {
-    -webkit-transform: translate(1979px, -124px);
-            transform: translate(1979px, -124px);
+  100% {
+    -webkit-transform: translate(2500px, 0px);
+            transform: translate(2500px, 0px);
   }
 }
 
 @keyframes birdOut {
-  0.0000% {
+  0% {
     -webkit-transform: translate(721px, 201px);
             transform: translate(721px, 201px);
   }
-  4.6604% {
-    -webkit-transform: translate(769.5px, 183.4px);
-            transform: translate(769.5px, 183.4px);
-  }
-  7.3877% {
-    -webkit-transform: translate(799.8px, 164.1px);
-            transform: translate(799.8px, 164.1px);
-  }
-  13.0113% {
-    -webkit-transform: translate(865.4px, 129.8px);
-            transform: translate(865.4px, 129.8px);
-  }
-  18.8847% {
-    -webkit-transform: translate(937.1px, 100.7px);
-            transform: translate(937.1px, 100.7px);
-  }
-  25.0078% {
-    -webkit-transform: translate(1013.8px, 76.1px);
-            transform: translate(1013.8px, 76.1px);
-  }
-  31.3589% {
-    -webkit-transform: translate(1094.8px, 55.2px);
-            transform: translate(1094.8px, 55.2px);
-  }
-  37.9015% {
-    -webkit-transform: translate(1179.1px, 37.3px);
-            transform: translate(1179.1px, 37.3px);
-  }
-  44.5888% {
-    -webkit-transform: translate(1265.8px, 21.8px);
-            transform: translate(1265.8px, 21.8px);
-  }
-  72.4915% {
-    -webkit-transform: translate(1628.9px, -33.9px);
-            transform: translate(1628.9px, -33.9px);
-  }
-  79.0241% {
-    -webkit-transform: translate(1713.6px, -49.1px);
-            transform: translate(1713.6px, -49.1px);
-  }
-  85.3516% {
-    -webkit-transform: translate(1795.1px, -66.4px);
-            transform: translate(1795.1px, -66.4px);
-  }
-  91.4279% {
-    -webkit-transform: translate(1872.5px, -86.7px);
-            transform: translate(1872.5px, -86.7px);
-  }
-  97.2181% {
-    -webkit-transform: translate(1944.9px, -110.5px);
-            transform: translate(1944.9px, -110.5px);
-  }
-  100.0000% {
-    -webkit-transform: translate(1979px, -124px);
-            transform: translate(1979px, -124px);
+  100% {
+    -webkit-transform: translate(2500px, 0px);
+            transform: translate(2500px, 0px);
   }
 }
 
@@ -1427,6 +1388,94 @@
     -webkit-filter: blur(40px);
             filter: blur(40px);
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes cool {
+  0% {
+    -webkit-transform: skewX(-20deg);
+            transform: skewX(-20deg);
+    color: #6aa3ec;
+  }
+  5% {
+    -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+    color: #6aa3ec;
+  }
+  10% {
+    -webkit-transform: skewX(-20deg);
+            transform: skewX(-20deg);
+    color: #6aa3ec;
+  }
+  15% {
+    -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+    color: #6aa3ec;
+  }
+  20% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+    color: #6aa3ec;
+  }
+  100% {
+    -webkit-transform: skewX(-10deg);
+            transform: skewX(-10deg);
+    color: #6aa3ec;
+  }
+}
+
+@keyframes cool {
+  0% {
+    -webkit-transform: skewX(-20deg);
+            transform: skewX(-20deg);
+    color: #6aa3ec;
+  }
+  5% {
+    -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+    color: #6aa3ec;
+  }
+  10% {
+    -webkit-transform: skewX(-20deg);
+            transform: skewX(-20deg);
+    color: #6aa3ec;
+  }
+  15% {
+    -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+    color: #6aa3ec;
+  }
+  20% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+    color: #6aa3ec;
+  }
+  100% {
+    -webkit-transform: skewX(-10deg);
+            transform: skewX(-10deg);
+    color: #6aa3ec;
+  }
+}
+
+@-webkit-keyframes blowAway {
+  10% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
+  }
+}
+
+@keyframes blowAway {
+  10% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
   }
 }
 

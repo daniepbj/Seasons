@@ -17,7 +17,7 @@
   }
 
   #textFadeUp {
-    animation-name: textFadeUp, assetOpacityDown;
+    animation-name: textFad eUp, assetOpacityDown;
     animation-duration: 2s, 2s;
     animation-delay: 7s, 11s;
     animation-fill-mode: forwards;
@@ -49,6 +49,50 @@
     color: #ffe650;
   }
 
+  #textCool1 {
+    animation-name: textFadeIn, assetOpacityDown;
+    animation-delay: 40s, 51s;
+    animation-duration: 2s, 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    color: #0911a0;
+  }
+
+  #textCool2 {
+    animation-name: textFadeIn, cool, assetOpacityDown;
+    animation-delay: 40s, 42s, 51s;
+    animation-duration: 2s, 1.5s, 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out, linear;
+    animation-iteration-count: 1, infinite;
+    opacity: 0;
+    color: #0911a0;
+  }
+
+  #textCool3 {
+    animation-name: textFadeIn, assetOpacityDown;
+    animation-delay: 40s, 51s;
+    animation-duration: 2s, 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    color: #0911a0;
+  }
+
+  .textCool p {
+    display: inline-block;
+  }
+
+  #textBlowAway {
+    animation-name: textFadeIn, blowAway, assetOpacityDown;
+    animation-delay: 40s, 48s, 51s;
+    animation-duration: 2s, 2s, 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+  }
+
   .textColors {
     animation-name: textFadeIn;
     animation-delay: 27s;
@@ -77,7 +121,7 @@
   #textColors3 {
     animation-name: fall-down, yellowFade;
     animation-duration: 2s, 2s;
-    animation-delay: 37.5s, 30s;
+    animation-delay: 36.5s, 30s;
     animation-fill-mode: forwards, forwards;
     animation-timing-function: ease-in-out, linear;
     z-index: -1;
@@ -86,7 +130,7 @@
   #textColors4 {
     animation-name: fall-down, redFade;
     animation-duration: 2s, 2s;
-    animation-delay: 37.5s, 30s;
+    animation-delay: 36.5s, 30s;
     animation-fill-mode: forwards, forwards;
     animation-timing-function: ease-in-out, linear;
     z-index: -1;
@@ -95,7 +139,7 @@
   #textColors6 {
     animation-name: fall-down, brownFade;
     animation-duration: 2s, 2s;
-    animation-delay: 37.5s, 30s;
+    animation-delay: 36.5s, 30s;
     animation-fill-mode: forwards, forwards;
     animation-timing-function: ease-in-out, linear;
     z-index: -1;

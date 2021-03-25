@@ -10,6 +10,10 @@ let textColors5 = document.getElementById("textColors5");
 let textColors6 = document.getElementById("textColors6");
 let textColors7 = document.getElementById("textColors7");
 let textColors = document.getElementsByClassName("textColors")[0];
+let textCool1 = document.getElementById("textCool1");
+let textCool2 = document.getElementById("textCool2");
+let textCool3 = document.getElementById("textCool3");
+let textBlowAway = document.getElementById("textBlowAway");
 let bird = document.getElementById("bird");
 
 setTimeout(function () {
@@ -66,6 +70,30 @@ setTimeout(function () {
 setTimeout(function () {
   textColors.remove();
 }, 39000);
+
+setTimeout(function () {
+  textCool1.innerHTML = "The air is fragrant, crisp, and ";
+}, 39000);
+
+setTimeout(function () {
+  textCool2.innerHTML = "cool, ";
+}, 39000);
+
+setTimeout(function () {
+  textCool3.innerHTML = "And once again I'm stuck in school.";
+}, 39000);
+
+setTimeout(function () {
+  textBlowAway.innerHTML =
+    "The birds are gone, the world is white, The winds are wild, they chill and bite.";
+}, 39000);
+
+setTimeout(function () {
+  textCool1.remove();
+  textCool2.remove();
+  textCool3.remove();
+  textBlowAway.remove();
+}, 52000);
 
 setTimeout(function () {
   bird.remove();

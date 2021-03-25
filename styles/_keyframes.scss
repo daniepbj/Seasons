@@ -52,6 +52,7 @@
   }
 }
 
+// Used a generator
 @keyframes bird {
   0.0000% {
     transform: translate(0px, 0px);
@@ -121,51 +122,13 @@
   }
 }
 
+// Used a generator
 @keyframes birdOut {
-  0.0000% {
+  0% {
     transform: translate(721px, 201px);
   }
-  4.6604% {
-    transform: translate(769.5px, 183.4px);
-  }
-  7.3877% {
-    transform: translate(799.8px, 164.1px);
-  }
-  13.0113% {
-    transform: translate(865.4px, 129.8px);
-  }
-  18.8847% {
-    transform: translate(937.1px, 100.7px);
-  }
-  25.0078% {
-    transform: translate(1013.8px, 76.1px);
-  }
-  31.3589% {
-    transform: translate(1094.8px, 55.2px);
-  }
-  37.9015% {
-    transform: translate(1179.1px, 37.3px);
-  }
-  44.5888% {
-    transform: translate(1265.8px, 21.8px);
-  }
-  72.4915% {
-    transform: translate(1628.9px, -33.9px);
-  }
-  79.0241% {
-    transform: translate(1713.6px, -49.1px);
-  }
-  85.3516% {
-    transform: translate(1795.1px, -66.4px);
-  }
-  91.4279% {
-    transform: translate(1872.5px, -86.7px);
-  }
-  97.2181% {
-    transform: translate(1944.9px, -110.5px);
-  }
-  100.0000% {
-    transform: translate(1979px, -124px);
+  100% {
+    transform: translate(2500px, 0px);
   }
 }
 
@@ -325,5 +288,47 @@
     transform-origin: 50% 100%;
     filter: blur(40px);
     opacity: 0;
+  }
+}
+
+@keyframes cool {
+  0% {
+    transform: skewX(-20deg);
+    color: rgb(106, 163, 236);
+  }
+
+  5% {
+    transform: skewX(20deg);
+    color: rgb(106, 163, 236);
+  }
+
+  10% {
+    transform: skewX(-20deg);
+    color: rgb(106, 163, 236);
+  }
+
+  15% {
+    transform: skewX(20deg);
+    color: rgb(106, 163, 236);
+  }
+
+  20% {
+    transform: skewX(0deg);
+    color: rgb(106, 163, 236);
+  }
+
+  100% {
+    transform: skewX(-10deg);
+    color: rgb(106, 163, 236);
+  }
+}
+
+@keyframes blowAway {
+  10% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(2000px);
   }
 }
