@@ -332,3 +332,16 @@
     transform: translateX(2000px);
   }
 }
+
+@keyframes whiteCircle {
+  20% {
+    opacity: 100%;
+  }
+
+  100% {
+    transform: scale(200);
+    border-radius: 100%;
+    position: absolute;
+    opacity: 100%;
+  }
+}

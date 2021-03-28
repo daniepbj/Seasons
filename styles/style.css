@@ -479,6 +479,28 @@
           animation-timing-function: linear;
 }
 
+.scene .whiteCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #fff;
+  position: absolute;
+  right: calc(50% - 5px);
+  top: 350px;
+  -webkit-animation-name: whiteCircle;
+          animation-name: whiteCircle;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 52s;
+          animation-delay: 52s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  z-index: 12;
+  opacity: 0;
+}
+
 .scene .clip {
   width: 100%;
   height: 101px;
@@ -1476,6 +1498,32 @@
   100% {
     -webkit-transform: translateX(2000px);
             transform: translateX(2000px);
+  }
+}
+
+@-webkit-keyframes whiteCircle {
+  20% {
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: scale(200);
+            transform: scale(200);
+    border-radius: 100%;
+    position: absolute;
+    opacity: 100%;
+  }
+}
+
+@keyframes whiteCircle {
+  20% {
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: scale(200);
+            transform: scale(200);
+    border-radius: 100%;
+    position: absolute;
+    opacity: 100%;
   }
 }
 
