@@ -20,6 +20,8 @@ let thickWinter2 = document.getElementById("thickWinter2");
 let thickWinter3 = document.getElementById("thickWinter3");
 let thickWinter4 = document.getElementById("thickWinter4");
 let thickWinter5 = document.getElementById("thickWinter5");
+let leaves = document.getElementsByClassName("leaves")[0];
+let lastWinter = document.getElementById("lastWinter");
 
 setTimeout(function () {
   textFadeIn.remove();
@@ -123,3 +125,12 @@ setTimeout(function () {
 setTimeout(function () {
   thickWinter5.innerHTML = "feel my feet.";
 }, 55000);
+
+setTimeout(function () {
+  lastWinter.innerHTML =
+    "The last is done, the next is here,The same as it is every year.";
+}, 55000);
+
+setTimeout(function () {
+  leaves.remove();
+}, 35000);

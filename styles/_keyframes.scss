@@ -383,6 +383,15 @@
   }
 }
 
+@keyframes lastWinterDiv {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 @keyframes falling-leaves1 {
   0% {
     transform: translateY();

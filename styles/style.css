@@ -555,72 +555,72 @@
 .scene .leaf1 {
   top: -100px;
   left: 100px;
-  -webkit-animation-delay: 1.9s;
-          animation-delay: 1.9s;
+  -webkit-animation-delay: 27.9s;
+          animation-delay: 27.9s;
 }
 
 .scene .leaf2 {
   top: -100px;
   left: 50px;
-  -webkit-animation-delay: 3.2s;
-          animation-delay: 3.2s;
+  -webkit-animation-delay: 30.2s;
+          animation-delay: 30.2s;
 }
 
 .scene .leaf3 {
   top: -100px;
   left: 200px;
   right: 25px;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 30s;
+          animation-delay: 30s;
 }
 
 .scene .leaf4 {
   top: -100px;
   left: 500px;
-  -webkit-animation-delay: 2.3s;
-          animation-delay: 2.3s;
+  -webkit-animation-delay: 28.3s;
+          animation-delay: 28.3s;
 }
 
 .scene .leaf5 {
   top: -100px;
   left: 1800px;
-  -webkit-animation-delay: 3.2s;
-          animation-delay: 3.2s;
+  -webkit-animation-delay: 29.2s;
+          animation-delay: 29.2s;
 }
 
 .scene .leaf6 {
   top: -100px;
   left: 1500px;
-  -webkit-animation-delay: 4.4s;
-          animation-delay: 4.4s;
+  -webkit-animation-delay: 30.4s;
+          animation-delay: 30.4s;
 }
 
 .scene .leaf7 {
   top: -100px;
   left: 900px;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 30s;
+          animation-delay: 30s;
 }
 
 .scene .leaf8 {
   top: -100px;
   left: 300px;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  -webkit-animation-delay: 32s;
+          animation-delay: 32s;
 }
 
 .scene .leaf9 {
   top: -100px;
   left: 1300px;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 29s;
+          animation-delay: 29s;
 }
 
 .scene .leaf10 {
   top: -100px;
   left: 1700px;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 31s;
+          animation-delay: 31s;
 }
 
 .scene .whiteCircle {
@@ -898,6 +898,19 @@
           animation-duration: 2s;
   -webkit-animation-delay: 55s;
           animation-delay: 55s;
+  z-index: 13;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.lastWinterDiv {
+  -webkit-animation-name: lastWinterDiv;
+          animation-name: lastWinterDiv;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 56s;
+          animation-delay: 56s;
   z-index: 13;
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
@@ -1780,6 +1793,24 @@
 }
 
 @keyframes WinterTextFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes lastWinterDiv {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes lastWinterDiv {
   0% {
     opacity: 0;
   }

@@ -155,6 +155,15 @@
   animation-fill-mode: forwards;
 }
 
+.lastWinterDiv {
+  animation-name: lastWinterDiv;
+  animation-duration: 2s;
+  animation-delay: 56s;
+  z-index: 13;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
 .thickWinterDiv p {
   display: inline-block;
 }
