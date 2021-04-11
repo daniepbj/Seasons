@@ -21,6 +21,7 @@ let thickWinter3 = document.getElementById("thickWinter3");
 let thickWinter4 = document.getElementById("thickWinter4");
 let thickWinter5 = document.getElementById("thickWinter5");
 let leaves = document.getElementsByClassName("leaves")[0];
+let bees = document.getElementsByClassName("bees")[0];
 let lastWinter = document.getElementById("lastWinter");
 
 setTimeout(function () {
@@ -134,3 +135,7 @@ setTimeout(function () {
 setTimeout(function () {
   leaves.remove();
 }, 35000);
+
+setTimeout(function () {
+  bees.remove();
+}, 39000);
