@@ -530,6 +530,99 @@
   bottom: 450px;
 }
 
+.scene .leaf1,
+.scene .leaf2,
+.scene .leaf3,
+.scene .leaf4,
+.scene .leaf5,
+.scene .leaf6,
+.scene .leaf7,
+.scene .leaf8,
+.scene .leaf9,
+.scene .leaf10 {
+  padding: 0px 50px 0px 50px;
+  position: absolute;
+  -webkit-animation-name: falling-leaves;
+          animation-name: falling-leaves;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  height: 80px;
+  z-index: 11;
+}
+
+.scene .leaf1 {
+  top: -100px;
+  left: 100px;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+
+.scene .leaf2 {
+  top: -100px;
+  left: 50px;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.scene .leaf3 {
+  top: -100px;
+  left: 200px;
+  right: 25px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.scene .leaf4 {
+  top: -100px;
+  left: 500px;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+}
+
+.scene .leaf5 {
+  top: -100px;
+  left: 1800px;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.scene .leaf6 {
+  top: -100px;
+  left: 1500px;
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+.scene .leaf7 {
+  top: -100px;
+  left: 900px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.scene .leaf8 {
+  top: -100px;
+  left: 300px;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.scene .leaf9 {
+  top: -100px;
+  left: 1300px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.scene .leaf10 {
+  top: -100px;
+  left: 1700px;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
 .scene .whiteCircle {
   width: 10px;
   height: 10px;
@@ -1692,6 +1785,149 @@
   }
   100% {
     opacity: 100%;
+  }
+}
+
+@-webkit-keyframes falling-leaves1 {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@keyframes falling-leaves1 {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@-webkit-keyframes falling-leaves2 {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@keyframes falling-leaves2 {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@-webkit-keyframes falling-leaves {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@keyframes falling-leaves {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@keyframes falling-leaves {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@keyframes falling-leaves {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@keyframes falling-leaves {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@keyframes falling-leaves {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@keyframes falling-leaves {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@keyframes falling-leaves {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@keyframes falling-leaves {
+  0% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    -webkit-transform: translateY(calc(100vh + 100px));
+            transform: translateY(calc(100vh + 100px));
   }
 }
 
