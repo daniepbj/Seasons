@@ -1,3 +1,5 @@
+// This document sets properties for the different landscape
+
 .scene {
   .assets--container {
     position: absolute;
@@ -336,6 +338,19 @@
     bottom: 450px;
   }
 
+  #sun {
+    width: 500px;
+    left: calc(45% + 50px);
+    animation-name: sun, sunDown;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-out;
+    animation-delay: 25s, 37s;
+    z-index: -1;
+    position: absolute;
+    bottom: -400px;
+  }
+
   .leaf1,
   .leaf2,
   .leaf3,
@@ -414,6 +429,77 @@
     top: -100px;
     left: 1700px;
     animation-delay: 31s;
+  }
+
+  .snowflakes img {
+    padding: 0px 50px 0px 50px;
+    position: absolute;
+    animation-name: snowflake;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    height: 80px;
+    z-index: 11;
+  }
+
+  .snowflake1 {
+    top: -100px;
+    left: 100px;
+    animation-delay: 40.9s;
+  }
+
+  .snowflake2 {
+    top: -100px;
+    left: 50px;
+    animation-delay: 43.2s;
+  }
+
+  .snowflake3 {
+    top: -100px;
+    left: 200px;
+    right: 25px;
+    animation-delay: 42s;
+  }
+
+  .snowflake4 {
+    top: -100px;
+    left: 500px;
+    animation-delay: 41.3s;
+  }
+
+  .snowflake5 {
+    top: -100px;
+    left: 1800px;
+    animation-delay: 42.2s;
+  }
+
+  .snowflake6 {
+    top: -100px;
+    left: 1500px;
+    animation-delay: 43.4s;
+  }
+
+  .snowflake7 {
+    top: -100px;
+    left: 900px;
+    animation-delay: 43s;
+  }
+
+  .snowflake8 {
+    top: -100px;
+    left: 300px;
+    animation-delay: 45s;
+  }
+
+  .snowflake9 {
+    top: -100px;
+    left: 1300px;
+    animation-delay: 42s;
+  }
+
+  .snowflake10 {
+    top: -100px;
+    left: 1700px;
+    animation-delay: 44s;
   }
 
   .whiteCircle {

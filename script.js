@@ -1,3 +1,4 @@
+// Defining all variables used
 let textFadeIn = document.getElementById("textFadeIn");
 let textFadeUp = document.getElementById("textFadeUp");
 let textDance = document.getElementById("textDance");
@@ -23,7 +24,13 @@ let thickWinter5 = document.getElementById("thickWinter5");
 let leaves = document.getElementsByClassName("leaves")[0];
 let bees = document.getElementsByClassName("bees")[0];
 let lastWinter = document.getElementById("lastWinter");
+let ending1 = document.getElementById("ending1");
+let ending2 = document.getElementById("ending2");
+let ending3 = document.getElementById("ending3");
+let ending4 = document.getElementById("ending4");
+let ending5 = document.getElementById("ending5");
 
+// Functions to remove and add html elements, so that the right text is shown at one at a time
 setTimeout(function () {
   textFadeIn.remove();
   textFadeUp.remove();
@@ -40,7 +47,7 @@ setTimeout(function () {
 
 setTimeout(function () {
   textHeatUp.innerHTML =
-    "The earth is warm, the sun's ablaze, It is a time of carefree days. And bees abuzz that chance to. ";
+    "The earth is warm, the sun's ablaze, It is a time of carefree days. And bees abuzz that chance to pass.";
 }, 26000);
 
 setTimeout(function () {
@@ -131,6 +138,14 @@ setTimeout(function () {
   lastWinter.innerHTML =
     "The last is done, the next is here,The same as it is every year.";
 }, 55000);
+
+setTimeout(function () {
+  ending1.innerHTML = "spring";
+  ending2.innerHTML = "then sunshine";
+  ending3.innerHTML = "autumn";
+  ending4.innerHTML = "snow";
+  ending5.innerHTML = "That is how each year must go.";
+}, 60000);
 
 setTimeout(function () {
   leaves.remove();

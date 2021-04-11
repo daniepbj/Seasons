@@ -1,3 +1,4 @@
+// This files stores all the keyframes that keeps track of all movement, fade ins etc.
 @keyframes backgroundColorSummer {
   100% {
     background-color: $backgroundSummer;
@@ -392,96 +393,6 @@
   }
 }
 
-@keyframes falling-leaves1 {
-  0% {
-    transform: translateY();
-  }
-
-  100% {
-    transform: translateY(1000px);
-  }
-}
-
-@keyframes falling-leaves2 {
-  0% {
-    transform: translateY();
-  }
-
-  100% {
-    transform: translateY(1000px);
-  }
-}
-
-@keyframes falling-leaves {
-  0% {
-    transform: translateY();
-  }
-
-  100% {
-    transform: translateY(1000px);
-  }
-}
-
-@keyframes falling-leaves {
-  0% {
-    transform: translateY();
-  }
-
-  100% {
-    transform: translateY(1000px);
-  }
-}
-
-@keyframes falling-leaves {
-  0% {
-    transform: translateY();
-  }
-
-  100% {
-    transform: translateY(1000px);
-  }
-}
-
-@keyframes falling-leaves {
-  0% {
-    transform: translateY();
-  }
-
-  100% {
-    transform: translateY(1000px);
-  }
-}
-
-@keyframes falling-leaves {
-  0% {
-    transform: translateY();
-  }
-
-  100% {
-    transform: translateY(1000px);
-  }
-}
-
-@keyframes falling-leaves {
-  0% {
-    transform: translateY();
-  }
-
-  100% {
-    transform: translateY(1000px);
-  }
-}
-
-@keyframes falling-leaves {
-  0% {
-    transform: translateY();
-  }
-
-  100% {
-    transform: translateY(1000px);
-  }
-}
-
 @keyframes falling-leaves {
   0% {
     transform: translateY();
@@ -489,5 +400,47 @@
 
   100% {
     transform: translateY(calc(100vh + 100px));
+  }
+}
+
+@keyframes snowflake {
+  0% {
+    transform: translateY();
+  }
+
+  100% {
+    transform: translateY(calc(100vh + 100px));
+  }
+}
+
+@keyframes sun {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1000px);
+  }
+}
+
+@keyframes sunDown {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes ending-fade {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
