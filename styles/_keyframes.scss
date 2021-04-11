@@ -100,7 +100,7 @@
     transform: translate(644px, 222px);
   }
   67.5% {
-    transform: translate(690px, 214.7px);
+    transform: translate(690px, 214px);
   }
   72% {
     transform: translate(736px, 194px);
@@ -128,10 +128,10 @@
 // Used a generator
 @keyframes birdOut {
   0% {
-    transform: translate(721px, 201px);
+    transform: translate(1021px, 201px);
   }
   100% {
-    transform: translate(2500px, 0px);
+    transform: translate(3000px, 0px);
   }
 }
 
@@ -175,7 +175,7 @@
 
 @keyframes color-fade {
   0% {
-    color: #f7b267;
+    color: #d1f767;
   }
 
   50% {
@@ -232,7 +232,7 @@
     color: $text;
   }
   100% {
-    color: #f7b267;
+    color: #f4ff8c;
   }
 }
 
@@ -241,7 +241,7 @@
     color: $text;
   }
   100% {
-    color: red;
+    color: rgb(255, 0, 0);
   }
 }
 
@@ -250,7 +250,7 @@
     color: $text;
   }
   100% {
-    color: brown;
+    color: rgb(121, 61, 5);
   }
 }
 
@@ -346,5 +346,30 @@
     border-radius: 100%;
     position: absolute;
     opacity: 100%;
+  }
+}
+
+@keyframes bee1 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(4000px);
+  }
+}
+@keyframes bee2 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(4000px);
+  }
+}
+@keyframes bee3 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(4000px);
   }
 }
