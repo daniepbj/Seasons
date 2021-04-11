@@ -302,6 +302,40 @@
     animation-timing-function: linear;
   }
 
+  #bee1 {
+    width: 50px;
+    animation-name: bee1;
+    animation-duration: 13s;
+    animation-delay: 26.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: absolute;
+    left: -100px;
+    bottom: 540px;
+  }
+  #bee2 {
+    width: 50px;
+    animation-name: bee2;
+    animation-duration: 11s;
+    animation-delay: 27.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: absolute;
+    left: -100px;
+    bottom: 600px;
+  }
+  #bee3 {
+    width: 50px;
+    animation-name: bee3;
+    animation-duration: 12s;
+    animation-delay: 27s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: absolute;
+    left: -100px;
+    bottom: 450px;
+  }
+
   .whiteCircle {
     width: 10px;
     height: 10px;

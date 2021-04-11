@@ -479,6 +479,57 @@
           animation-timing-function: linear;
 }
 
+.scene #bee1 {
+  width: 50px;
+  -webkit-animation-name: bee1;
+          animation-name: bee1;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+  -webkit-animation-delay: 26.5s;
+          animation-delay: 26.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: absolute;
+  left: -100px;
+  bottom: 540px;
+}
+
+.scene #bee2 {
+  width: 50px;
+  -webkit-animation-name: bee2;
+          animation-name: bee2;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+  -webkit-animation-delay: 27.5s;
+          animation-delay: 27.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: absolute;
+  left: -100px;
+  bottom: 600px;
+}
+
+.scene #bee3 {
+  width: 50px;
+  -webkit-animation-name: bee3;
+          animation-name: bee3;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-delay: 27s;
+          animation-delay: 27s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: absolute;
+  left: -100px;
+  bottom: 450px;
+}
+
 .scene .whiteCircle {
   width: 10px;
   height: 10px;
@@ -747,6 +798,31 @@
   z-index: -1;
 }
 
+.thickWinterDiv {
+  -webkit-animation-name: WinterTextFadeIn;
+          animation-name: WinterTextFadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 55s;
+          animation-delay: 55s;
+  z-index: 13;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.thickWinterDiv p {
+  display: inline-block;
+}
+
+#thickWinter2 {
+  font-weight: 700;
+}
+
+#thickWinter4 {
+  opacity: 30%;
+}
+
 @-webkit-keyframes backgroundColorSummer {
   100% {
     background-color: #aaffd1;
@@ -927,8 +1003,8 @@
             transform: translate(644px, 222px);
   }
   67.5% {
-    -webkit-transform: translate(690px, 214.7px);
-            transform: translate(690px, 214.7px);
+    -webkit-transform: translate(690px, 214px);
+            transform: translate(690px, 214px);
   }
   72% {
     -webkit-transform: translate(736px, 194px);
@@ -1022,8 +1098,8 @@
             transform: translate(644px, 222px);
   }
   67.5% {
-    -webkit-transform: translate(690px, 214.7px);
-            transform: translate(690px, 214.7px);
+    -webkit-transform: translate(690px, 214px);
+            transform: translate(690px, 214px);
   }
   72% {
     -webkit-transform: translate(736px, 194px);
@@ -1057,23 +1133,23 @@
 
 @-webkit-keyframes birdOut {
   0% {
-    -webkit-transform: translate(721px, 201px);
-            transform: translate(721px, 201px);
+    -webkit-transform: translate(1021px, 201px);
+            transform: translate(1021px, 201px);
   }
   100% {
-    -webkit-transform: translate(2500px, 0px);
-            transform: translate(2500px, 0px);
+    -webkit-transform: translate(3000px, 0px);
+            transform: translate(3000px, 0px);
   }
 }
 
 @keyframes birdOut {
   0% {
-    -webkit-transform: translate(721px, 201px);
-            transform: translate(721px, 201px);
+    -webkit-transform: translate(1021px, 201px);
+            transform: translate(1021px, 201px);
   }
   100% {
-    -webkit-transform: translate(2500px, 0px);
-            transform: translate(2500px, 0px);
+    -webkit-transform: translate(3000px, 0px);
+            transform: translate(3000px, 0px);
   }
 }
 
@@ -1157,7 +1233,7 @@
 
 @-webkit-keyframes color-fade {
   0% {
-    color: #f7b267;
+    color: #d1f767;
   }
   50% {
     color: #e64a42;
@@ -1169,7 +1245,7 @@
 
 @keyframes color-fade {
   0% {
-    color: #f7b267;
+    color: #d1f767;
   }
   50% {
     color: #e64a42;
@@ -1272,7 +1348,7 @@
     color: #252525;
   }
   100% {
-    color: #f7b267;
+    color: #f4ff8c;
   }
 }
 
@@ -1281,7 +1357,7 @@
     color: #252525;
   }
   100% {
-    color: #f7b267;
+    color: #f4ff8c;
   }
 }
 
@@ -1308,7 +1384,7 @@
     color: #252525;
   }
   100% {
-    color: brown;
+    color: #793d05;
   }
 }
 
@@ -1317,7 +1393,7 @@
     color: #252525;
   }
   100% {
-    color: brown;
+    color: #793d05;
   }
 }
 
@@ -1531,6 +1607,90 @@
             transform: scale(200);
     border-radius: 100%;
     position: absolute;
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes bee1 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+}
+
+@keyframes bee1 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+}
+
+@-webkit-keyframes bee2 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+}
+
+@keyframes bee2 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+}
+
+@-webkit-keyframes bee3 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+}
+
+@keyframes bee3 {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+}
+
+@-webkit-keyframes WinterTextFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes WinterTextFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 100%;
   }
 }
