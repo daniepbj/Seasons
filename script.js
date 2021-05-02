@@ -30,8 +30,13 @@ let ending3 = document.getElementById("ending3");
 let ending4 = document.getElementById("ending4");
 let ending5 = document.getElementById("ending5");
 
+function setVisibility(elementID, visible) {
+  document.getElementById(elementID).style.display = visible ? "" : "none";
+}
+
 // Functions to remove and add html elements, so that the right text is shown at one at a time. With a timeout function, we can decide exactly when to delete and create text
 setTimeout(function () {
+  setVisibility("textFadeIn", false);
   textFadeIn.remove();
   textFadeUp.remove();
 }, 13000);
