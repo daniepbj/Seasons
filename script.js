@@ -30,7 +30,7 @@ let ending3 = document.getElementById("ending3");
 let ending4 = document.getElementById("ending4");
 let ending5 = document.getElementById("ending5");
 
-// Functions to remove and add html elements, so that the right text is shown at one at a time
+// Functions to remove and add html elements, so that the right text is shown at one at a time. With a timeout function, we can decide exactly when to delete and create text
 setTimeout(function () {
   textFadeIn.remove();
   textFadeUp.remove();
