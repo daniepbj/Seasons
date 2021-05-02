@@ -1,3 +1,5 @@
+// General mixin for centering, and opacity changes
+
 @mixin flexCenter($direction) {
   display: flex;
   justify-content: center;
